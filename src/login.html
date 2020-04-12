@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./asset/css/reset.css">
+        <link rel="stylesheet" href="./asset/css/root.css">
+        <link rel="stylesheet" href="./asset/css/login.css">
+        <link rel="stylesheet" href="./asset/css/nav.css">
+        <script src="./asset/js/script.js"></script>
+        <script src="./asset/js/validation.js"></script>
+
+        <title>Tvastra</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo"></a>
+            <ul>
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="treatment.html">Treatments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="burger" id="burger1">
+                <li id="b1"><a href="doctor.html">Doctors</a></li>
+                <li id="b2"><a href="hospital.html">Hospitals</a></li>
+                <li id="b3"><a href="treatment.html">Treatments</a></li>
+                <li id="b4"><a href="contact.html">Contact Us</a></li>
+                <li id="b5"><a href="about.html">About</a></li>
+                <li id="b6"><a href="login.html">Login / SignUp</a></li>
+                <li id="b7"><a href="#">Get a Quote</a></li>
+            </ul>
+            <div class="navbtn">
+                <button id="btn1"><a href="login.html">Login / SignUp</a></button>
+                <button id="btn2"><a href="#">Get a Quote</a></button>
+            </div>
+            <i class="fas fa-bars" onclick="burger()" id="burger"></i>
+        </nav>
+
+        <div class="box">
+            <div class="card">
+                <h3>Login</h3>
+                <div class="ques">
+                    <input type="text" id="phone" placeholder="Enter Mobile Number">
+                    <div class="que">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <input type="text" id="otp" placeholder="Enter OTP">
+                </div>
+                <button onclick="login()">L O G I N<i class="fas fa-arrow-right"></i></button>
+                <p>Not Registered? <a href="signup.html">Sign Up</a></p>
+            </div>
+        </div>
+        <footer>All Rights Reserved. &copy; tvastra 2018</footer>
+    </body>
+</html>

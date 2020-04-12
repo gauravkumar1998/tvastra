@@ -1,0 +1,208 @@
+html{
+    box-sizing: border-box;
+  }
+  body{
+    text-align: center;
+  }
+  @font-face {
+    font-family: lightfont;
+    src: url(../Nexa-Light.otf);
+  }
+  @font-face {
+    font-family: boldfont;
+    src: url(../Nexa-Bold.otf);
+  }
+  
+  *{
+    font-family: lightfont;
+  }
+  h1{
+    font-family: boldfont;
+  }
+  
+  .top{
+    position: relative;
+    color: white;
+}
+  .top:before{
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+}
+.top>img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+  .top>.title{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    text-align: center;
+    margin: 0 1rem;
+}
+.about>.data{
+  padding: 1rem;
+}
+.about>.image{
+  padding: 1rem;
+  max-width: 420px;
+  margin: 0 auto;
+}
+.about>.image>img{
+  width: 100%;
+}
+
+.wellness{
+  position: relative;
+  padding: 1rem;
+  background-color: #000;
+  color: #fff;
+}
+.wellness>.free>button{
+  background-color: #0793f1;
+  color: #fff;
+  border-style: none;
+  border-radius: 7px;
+  font-size: large;
+  font-weight: bold;
+  padding: .5rem 1.5rem;
+}
+
+.wellness>.container{
+  display: grid;
+  grid-template-columns: auto;
+  padding-top: 1rem;
+}
+.wellness>.container>.grid{
+  border: 2px solid grey;
+  border-radius: 5px;
+  margin: .3rem auto;
+  padding: .5rem ;
+  width: 350px;
+}
+.wellness>.container>.grid>h2{
+  margin-bottom: 0;
+}
+.wellness>.container>.grid>p{
+  color: grey;
+  font-size: small;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#video{
+  display: none;
+  position: absolute;
+  overflow-y: hidden;
+  z-index: -1;
+  left: 0;
+  top: 0rem;
+  width: 100%;
+}
+
+@media only screen and (min-width:750px){
+  .top>.title{
+    left: 10%;
+  }
+  .about{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 0 1rem;
+  }
+  .about>.image{
+    padding: 2rem 0;
+  }
+  .wellness>.main{
+    text-align: start;
+    padding: 1rem 1rem;
+  }
+  .wellness>.free{
+    text-align: start;
+    padding: 1rem;
+  }
+  .wellness>.container{
+    grid-template-columns: 33% 34% 33%;
+    padding: 2rem 0 1rem 0;
+  }
+  .wellness>.container>.grid{
+    margin: .3rem;
+    width: auto;
+    max-width: 400px;
+  }
+  .wellness>.container>.g1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .wellness>.container>.g2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .wellness>.container>.g3{
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .wellness>.container>.g4{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .wellness>.container>.g5{
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+  .wellness>.container>.g6{
+    grid-row: 2/3;
+    grid-column: 3/4;
+  }
+}
+@media only screen and (min-width:900px){
+  .top>img{
+    height: 300px;
+  }
+  .top>.title{
+    top: 30%;
+    left: 22%;
+  }
+  .about{
+    padding: 0 4rem;
+    grid-template-columns: 50% 50%;
+  }
+  .about>.image{
+    max-width: 280px;
+  }
+
+  #video{
+    display: block;
+  }
+  
+  .wellness{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1rem 4rem;
+    background: url('./asset/image/poster.jpg');
+    background-size: cover;
+  }
+  .wellness>.main{
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .wellness>.free{
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .wellness>.container{
+    grid-row: 1/3;
+    grid-column: 2/3;
+    padding: 2rem 0;
+  }
+  .wellness>.container>.grid{
+    padding: 2.5rem 0;
+  }
+  .wellness>.container>.grid>p{
+    color: lightgrey;
+  }
+}

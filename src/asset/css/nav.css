@@ -1,0 +1,125 @@
+nav{
+    position: relative;
+    background-color: white;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+}
+nav>a>img{
+    max-width: 140px;
+    padding: .7rem;
+}
+nav>i{
+    padding: 10px;
+    padding-right: 15px;
+    float: right;
+    color: #525659;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav>ul{
+    display: inline;
+    margin: 1rem;
+}
+nav>ul>li{
+    display: none;
+    margin: 0 .5rem;
+    list-style-type: none;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+#btn1{
+    display: none;
+    background-color: #fff;
+    padding: .5rem 1rem;
+    margin-right: .5rem;
+    border: 1px solid #081038;
+    border-radius: .2rem;
+}
+#btn1>a{
+    text-decoration: none;
+    color: black;
+}
+#btn2{
+    display: none;
+    background-color: #081038;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    border-style: none;
+    border-radius: .2rem;
+}
+#btn2>a{
+    text-decoration: none;
+    color: white;
+}
+nav>.burger{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    text-align: center;
+    padding: .7rem 0;
+    width: 45%;
+    max-width: 200px;
+    right: -2px;
+    overflow: auto;
+    z-index: 1;
+}
+nav>.burger>li:hover{
+    font-size: large;
+}
+nav>.show{
+    display: block;
+}
+nav>.show>li{
+    display: block;
+    font-weight: bold;
+}
+nav>.show>li>a{
+    color: #0099cc;
+}
+
+@media only screen and (min-width:900px){
+    body{
+        padding: 0;
+    }
+    nav{
+        display: flex;
+    }
+    nav>.show{
+        display: none;
+    }
+    nav>ul{
+        display: inline-flex;
+        padding: 10px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav>a>img{
+        display: inline-flex;
+        max-width: 170px;
+        max-height: 40px;
+        padding: .7rem 4rem;
+        padding-left: 2rem;
+    }
+    nav>.navbtn{
+        display: inline-flex;
+        padding: 1rem;
+    }
+    nav>ul>li{
+        display: inline;
+        font-weight: bold;
+    }
+    #btn1{
+        display: inline;
+        font-weight: bold;
+    }
+    #btn2{
+        display: inline;
+    }
+    nav>.fas{
+        display: none;
+    }
+}  

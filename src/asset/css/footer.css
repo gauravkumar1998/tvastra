@@ -1,0 +1,91 @@
+.footer{
+    background-color: #021433;
+    padding: 1.5rem;
+    text-align: center;
+    color: #cccccc;
+}
+.footer>h2{
+    color: #fff;
+}
+.footer>img{
+    width: 50%;
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+footer{
+    color: white;
+    margin-top: 1rem;
+}
+
+#footer1>li{
+    list-style-type: none;
+}
+#footer1>li>a{
+    text-decoration: none;
+    color: #cccccc;
+}
+#icon2{
+    display: block;
+    color: #cccccc;
+    font-size: large;
+}
+#icon2>.fab{
+    padding: 0 .5rem;
+}
+@media only screen and (min-width:750px){
+    .footer{
+        background-color: white;
+        padding-bottom: 3rem;
+    }
+    .footer>img{
+        float: right;
+        max-width: 110px;
+        margin-bottom: 0;
+    }
+    .footer>h2{
+        display: none;
+    }
+    #footer1{
+        margin-bottom: 2rem;
+    }
+    #footer1>li{
+        margin: 0 10px;
+        float: left;
+    }
+    #footer1>li>a{
+        color: #081038;
+        font-weight: bolder;
+    }
+    #icon2{
+        float: right;
+        color: #081038;
+        font-size: large;
+        padding-top: 1rem;
+    }
+    #icon2>.fab{
+        padding: 0 .1rem;
+    }
+    footer{
+        margin: 1rem;
+        float: left;
+        color: #081038;
+        font-size: .9rem;
+        font-weight: bold;
+    }
+}
+@media only screen and (min-width:900px){
+    .footer{
+        padding: 3rem 5rem;
+        border-bottom: .4rem solid #0c7eca;
+        font-weight: bold;
+    }
+    .footer>img{
+        max-width: 150px;
+    }
+    #footer1{
+        margin-bottom: 4rem;
+    }
+    #icon2>.fab{
+        padding: 0 .3rem;
+    }
+}

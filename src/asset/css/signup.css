@@ -1,0 +1,142 @@
+html{
+    box-sizing: border-box;
+  }
+  body{
+    text-align: center;
+    background-color: #96c6e7;
+  }
+  @font-face {
+    font-family: lightfont;
+    src: url(../Nexa-Light.otf);
+  }
+  @font-face {
+    font-family: boldfont;
+    src: url(../Nexa-Bold.otf);
+  }
+
+  .box{
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+  }
+  .box>.card{
+      background-color: white;
+      margin: 4rem 1.5rem;
+      margin-bottom: 1rem;
+      max-width: 550px;
+  }
+  .box>.card>h3{
+      color: #0099cc;
+      padding: 1rem;
+      font-family: boldfont;
+      border-bottom: 2px solid lightgrey;
+  }
+  .box>.card>input{
+      padding: 1rem;
+      width: 90%;
+      margin: .3rem 0;
+      border: 1px solid lightgrey;
+      font-family: lightfont;
+  }
+  #line{
+      display: inline-block;
+      width: 44.6%;
+  }
+
+  .box>.card>.drop{
+    position: relative;
+  }
+  .box>.card>.drop>.caret{
+      position: absolute;
+      top: 22px;
+      right: 25px;
+  }
+  .box>.card>.drop>.dropbtn{
+    padding: 1rem;
+    width: 90%;
+    margin: .3rem 0;
+    border: 1px solid lightgrey;
+    font-family: lightfont;
+    cursor: pointer;
+  }
+  .box>.card>.drop>.content{
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    padding-top: .7rem;
+    width: 90%;
+    margin: -0.3rem;
+    left: 1.2rem;
+    overflow: auto;
+    border: 1px solid lightgrey;
+    z-index: 1;
+  }
+  .box>.card>.drop>.content>li{
+      list-style-type: none;
+      display: block;
+      cursor: pointer;
+  }
+  .box>.card>.drop>.content>li:hover{
+    color: #0099cc;
+    font-size: large;
+  }
+  .box>.card>.drop>.show{
+      display: block;
+  }
+  
+  .box>.card>button{
+    background-color: #081038;
+    color: #fff;
+    padding: .8rem 1.5rem;
+    border-style: none;
+    width: 90%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+  }
+  .box>.card>button:hover{
+    box-shadow: 0 0 .5rem #081038;
+  }
+  .box>.card>button>.fas{
+      float: right;
+  }
+  .box>.card>p{
+      font-size: small;
+      font-weight: bolder;
+  }
+  .box>.card>p>a{
+      color: #0099ff;
+      text-decoration: none;
+  }
+  footer{
+    margin: 1rem;
+    color: #081038;
+    font-size: small;
+    font-family: boldfont;
+  }
+
+  @media only screen and (min-width:500px){
+    .box>.card>.drop>.content{
+      left: 1.8rem;
+    }
+  }
+@media only screen and (min-width:750px){
+    .box>.card{
+        margin: 7rem 1.5rem;
+        margin-bottom: 6rem;
+    }
+    .box>.card>.drop>.caret{
+        right: 35px;
+    }
+    .box>.card>.drop>.content{
+        left: 2rem;
+    }
+}
+@media only screen and (min-width:900px){
+    .box>.card{
+        margin: 5rem 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .box>.card>.drop>.content{
+        left: 1.95rem;
+    }
+}

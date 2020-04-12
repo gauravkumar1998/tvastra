@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./asset/css/reset.css">
+        <link rel="stylesheet" href="./asset/css/root.css">
+        <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="./asset/css/nav.css">
+        <link rel="stylesheet" href="./asset/css/help.css">
+        <link rel="stylesheet" href="./asset/css/footer.css">
+        <script src="./asset/js/script.js"></script>
+
+        <title>Tvastra</title>
+    </head>
+    <body>
+        
+        <nav>
+            <a href="index.html"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo"></a>
+            <ul>
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="treatment.html">Treatments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="burger" id="burger1">
+                <li id="b1"><a href="doctor.html">Doctors</a></li>
+                <li id="b2"><a href="hospital.html">Hospitals</a></li>
+                <li id="b3"><a href="treatment.html">Treatments</a></li>
+                <li id="b4"><a href="contact.html">Contact Us</a></li>
+                <li id="b5"><a href="about.html">About</a></li>
+                <li id="b6"><a href="login.html">Login / SignUp</a></li>
+                <li id="b7"><a href="#">Get a Quote</a></li>
+            </ul>
+            <div class="navbtn">
+                <button id="btn1"><a href="login.html">Login / SignUp</a></button>
+                <button id="btn2"><a href="#">Get a Quote</a></button>
+            </div>
+            <i class="fas fa-bars" onclick="burger()" id="burger"></i>
+        </nav>
+        
+        <div class="search">
+            <h1>Find Affordable Healthcare</h1>
+            <p>Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford.</p>
+            <div class="flex-container">
+                <button>
+                    <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <input type="text" id="location" placeholder="Ahemdabad">
+                <button>
+                    <i class="fas fa-crosshairs"></i>
+                </button>
+            </div>
+            <input type="text" id="box" placeholder="Search for doctors, hospitals and treatment">
+            <button>Search</button>
+        </div>
+
+        <div class="working">
+            <h1>How it works</h1>
+            <p>Various facilities are provided here. But there is a protocol which needs to be followed so that you get the service at its best.</p>
+            
+            <div class="container">
+                <div class="box" id="box1" onclick="work(1)">
+                    <p class="num">01</p>
+                    <p class="head">Fix Consultation</p>
+                </div>
+                <div id="img1" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.png" alt="Fix consultation">
+                    </div>
+                    <h2>Fix Consultation</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box2" onclick="work(2)">
+                    <p class="num">02</p>
+                    <p class="head">Upload Medical Reports</p>
+                </div>
+                <div id="img2" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img2.png" alt="Fix consultation">
+                    </div>
+                    <h2>Upload Medical Reports</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box3" onclick="work(3)">
+                    <p class="num">03</p>
+                    <p class="head">Consult with doctor</p>
+                </div>
+                <div id="img3" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img3.jpeg" alt="Fix consultation">
+                    </div>
+                    <h2>Consult with doctor</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box4" onclick="work(4)">
+                    <p class="num">04</p>
+                    <p class="head">Fix Surgery</p>
+                </div>
+                <div id="img4" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img4.jpeg" alt="Fix consultation">
+                    </div>
+                    <h2>Fix Surgery</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box5" onclick="work(5)">
+                    <p class="num">05</p>
+                    <p class="head">Hospital sent estimates</p>
+                </div>
+                <div id="img5" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img5.jpg" alt="Fix consultation">
+                    </div>
+                    <h2>Hospital sent estimates</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box6" onclick="work(6)">
+                    <p class="num">06</p>
+                    <p class="head">Payment</p>
+                </div>
+                <div id="img6" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img6.jpg" alt="Fix consultation">
+                    </div>
+                    <h2>Payment</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+                <div class="box" id="box7" onclick="work(7)">
+                    <p class="num">07</p>
+                    <p class="head">Surgery Completed</p>
+                </div>
+                <div id="img7" class="photo">
+                    <div id=image1>
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img7.jpeg" alt="Fix consultation">
+                    </div>
+                    <h2>Surgery Completed</h2>
+                    <p>This depicts that user will have to fix appointment first when it selects a particular doctor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="doctor">
+            <h1>World class expert doctors!</h1>
+            <p>The university of Texas Southwestern Medical center has long been a world-renowned research hospital. But until the `80s, you couldn't go there. Now, with the addition of Aston Center and Zale Lipshy hospital, UT Southwestern is also a mecca for patient care.</p>
+            <div class="cards">
+                <div class="card">
+                    <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="doctor1"></div>
+                    <p class="name">____Duke Sanson</p>
+                    <p>Neuro Surgeon</p>
+                    <p>Chain Department of Neurological Surgery</p>
+                    <p>Australia</p>
+                </div>
+                <div class="card">
+                    <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--004.jpg" alt="doctor2"></div>
+                    <p class="name">____Georgea Peter</p>
+                    <p>Breast Cancer Surgeon</p>
+                    <p>Director, UT, Southwest</p>
+                    <p>London</p>
+                </div>
+                <div class="card">
+                    <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--005.jpg" alt="doctor3"></div>
+                    <p class="name">____Charlie Moon</p>
+                    <p>Cardiac Surgeon</p>
+                    <p>MBBS, MD, FRCP, MRCP, Fellowship</p>
+                    <p>New Delhi, India</p>
+                </div>
+                <div class="card">
+                    <div id=image><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--003.jpg" alt="doctor4"></div>
+                    <p class="name">____Rose Moon</p>
+                    <p>Plastic Surgeon</p>
+                    <p>Department of Plastic and Reconstructive Surgery</p>
+                    <p>Dubai</p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot d1"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="features">
+            <h1>Featured Medical Treatments</h1>
+            <p>The hospital provides various medical treatments done by our expert doctors. Your health is our priority.</p>
+            <div class="a">
+                <div class="gradient i1">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--009.jpg"/>
+                    <div class="bottom">
+                        <p class="head">Dentistry</p>
+                        <p>50+ Specialists</p>
+                    </div>
+                </div>
+                <div class="gradient i2">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--010.jpg"/>
+                    <div class="bottom">
+                        <p class="head">Cancer</p>
+                        <p>50+ Specialists</p>
+                    </div>
+                </div>
+                <div class="gradient i3">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--008.jpg"/>
+                    <div class="bottom">
+                        <p class="head">Orthopedics Surgery</p>
+                        <p>50+ Specialists</p>
+                    </div>
+                </div>
+                <div class="gradient i4">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--006.jpg"/>
+                <div class="bottom">
+                    <p class="head">Multi Organ Transplant</p>
+                    <p>50+ Specialists</p>
+                </div>
+            </div>
+                <div class="gradient i5">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--011.jpg"/>
+                    <div class="bottom">
+                        <p class="head">Cardiologic Treatment</p>
+                        <p>50+ Specialists</p>
+                    </div>
+                </div>
+                <div class="gradient i6">
+                        <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--000.jpg"/>
+                    <div class="bottom">
+                        <p class="head">Infertility Treatment</p>
+                        <p>50+ Specialists</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot d1"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class="services">
+            <h1>Exclusive services</h1>
+            <p>We want you to be comfortable and thus apart from threating you illness, we provide you with other services that you can see.</p>
+            <div class="grid-container">
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-01.png" alt="item1">
+                    <p>Travel</p>
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-02.png" alt="item2">
+                    <p>Food</p>
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-03.png" alt="item3">
+                    <p>Accomodation</p>
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-07.png" alt="item4">
+                    <p>Labs</p>
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-10.png" alt="item5">
+                    <p>Reports</p>
+                </div>
+                <div class="item">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Icons-06.png" alt="item6">
+                    <p>Ambulance</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="help">
+            <div class="left">
+                <h2>Need Help?</h2>
+                <p>Just let us know. We will be happy to assist you</p>
+            </div>
+            <div class="right">
+                <button>Submit your query</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
+            <div id="footer1">
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="treatment.html">Treatments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </div>    
+            <div id="icon2">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-instagram"></i>
+            </div>    
+            <footer>All rights reserved. &copy; tvastra 2018</footer>
+        </div>
+    
+    </body>
+</html>

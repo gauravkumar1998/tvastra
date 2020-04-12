@@ -1,0 +1,109 @@
+html{
+    box-sizing: border-box;
+  }
+  body{
+    text-align: start;
+  }
+  @font-face {
+    font-family: lightfont;
+    src: url(../Nexa-Light.otf);
+  }
+  @font-face {
+    font-family: boldfont;
+    src: url(../Nexa-Bold.otf);
+  }
+  
+  *{
+    font-family: lightfont;
+  }
+  h1{
+    font-family: boldfont;
+  }
+
+  .top{
+    position: relative;
+    background: url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png
+    );
+    background-size: 100% 100%;
+    padding: 7rem;
+    text-align: center;
+    color: #fff;
+}
+.top:before{
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+}
+.top>.title{
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+
+.container{
+    margin: 2rem;
+}
+.container>.ques{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.container>.ques>.icon{
+    margin: auto;
+    margin-right: 0;
+}
+.container>.ques>.q>h3{
+    font-family: boldfont;
+    color: #0793f1;
+}
+.container>.ques>.icon>.fas{
+    background-color: #c5e8ff;
+    color: #0793f1;
+    padding: .2rem .4rem;
+    border-radius: 50%;
+}
+.container>.ans{
+    display: none;
+    background-color: #c5e8ff;
+    padding: .7rem;
+}
+.container>.ans>p{
+    margin: 0;
+}
+#up{
+    display: none;
+}
+.container>.active{
+    display: block;
+}
+
+@media only screen and (min-width:600px){
+    .top>.title{
+        left: 44%;
+    }
+}
+@media only screen and (min-width:750px){
+    .top>.title{
+        left: 39%;
+    }
+    .top>.title>h1{
+        text-align: start;
+        margin: 1.5rem 2rem;
+    }
+}
+@media only screen and (min-width:900px){
+    .top>.title{
+        left: 0%;
+    }
+    .top>.title>h1{
+        margin: 1.5rem 5rem;
+    }
+    .top>.title>p{
+        margin: 1.5rem 5rem;
+    }
+    .container{
+        margin: 1rem 5rem;
+    }
+}

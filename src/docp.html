@@ -1,0 +1,193 @@
+<html>
+    <head>
+        <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./asset/css/reset.css">
+        <link rel="stylesheet" href="./asset/css/root.css">
+        <link rel="stylesheet" href="./asset/css/docp.css">
+        <link rel="stylesheet" href="./asset/css/nav.css">
+        <link rel="stylesheet" href="./asset/css/help.css">
+        <link rel="stylesheet" href="./asset/css/footer.css">
+        <script src="./asset/js/script.js"></script>
+
+        <title>Tvastra</title>
+    </head>
+    <body>
+        
+        <nav>
+            <a href="index.html"><img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo"></a>
+            <ul>
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="treatment.html">Treatments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul class="burger" id="burger1">
+                <li id="b1"><a href="doctor.html">Doctors</a></li>
+                <li id="b2"><a href="hospital.html">Hospitals</a></li>
+                <li id="b3"><a href="treatment.html">Treatments</a></li>
+                <li id="b4"><a href="contact.html">Contact Us</a></li>
+                <li id="b5"><a href="about.html">About</a></li>
+                <li id="b6"><a href="login.html">Login / SignUp</a></li>
+                <li id="b7"><a href="#">Get a Quote</a></li>
+            </ul>
+            <div class="navbtn">
+                <button id="btn1"><a href="login.html">Login / SignUp</a></button>
+                <button id="btn2"><a href="#">Get a Quote</a></button>
+            </div>
+            <i class="fas fa-bars" onclick="burger()" id="burger"></i>
+        </nav>
+
+        <div class="top">
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png" alt="image">
+            <div class="title">
+                <h1>About John Nission</h1>
+                <p>Home / Doctor Profile</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main">
+                <div class="image">
+                    <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/image--002.jpg" alt="doctor1">
+                </div>
+                <div class="btn">
+                    <button id="btn"><a href="appoint.html">Book an appointment</a></button>
+                </div>
+            </div>
+            <div class="data">
+                <div class="name"><h1>__John Nission</h1></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                <div class="ques q1" id="box1" onclick="work(1)">
+                    <div class="icon1">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Specialization</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img1" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q2" id="box2" onclick="work(2)">
+                    <div class="icon1">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>List of Treatments</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img2" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q3" id="box3" onclick="work(3)">
+                    <div class="icon1">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Work Experience</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img3" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q4" id="box4" onclick="work(4)">
+                    <div class="icon1">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Qualification</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img4" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q5" id="box5" onclick="work(5)">
+                    <div class="icon1">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Awards</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img5" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q6" id="box6" onclick="work(6)">
+                    <div class="icon1">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Location</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img6" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+                <div class="ques q7" id="box7" onclick="work(7)">
+                    <div class="icon1">
+                        <i class="fas fa-rupee-sign"></i>
+                    </div>
+                    <div class="d1">
+                        <h2>Avg Fees</h2>
+                    </div>
+                    <div class="icon2">
+                        <i class="fas fa-angle-down"></i>
+                    </div>
+                </div>
+                <div id="img7" class="ans">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit repudiandae enim obcaecati! Doloremque alias, harum suscipit, enim upsum cupiditate qui. Ipsum delectus deleniti distinctio, alios, earum officiis accusamus consectetur eius.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="help">
+            <div class="left">
+                <h2>Need Help?</h2>
+                <p>Just let us know. We will be happy to assist you</p>
+            </div>
+            <div class="right">
+                <button>Submit your query</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/footer.png" alt="logo">
+            <div id="footer1">
+                <li><a href="doctor.html">Doctors</a></li>
+                <li><a href="hospital.html">Hospitals</a></li>
+                <li><a href="treatment.html">Treatments</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </div>    
+            <div id="icon2">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus"></i>
+                <i class="fab fa-instagram"></i>
+            </div>    
+            <footer>All rights reserved. &copy; tvastra 2018</footer>
+        </div>
+    
+    </body>
+</html>

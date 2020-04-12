@@ -1,0 +1,102 @@
+html{
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-color: #96c6e7;
+}
+@font-face {
+  font-family: lightfont;
+  src: url(../Nexa-Light.otf);
+}
+@font-face {
+  font-family: boldfont;
+  src: url(../Nexa-Bold.otf);
+}
+
+.box{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+.box>.card{
+    background-color: white;
+    margin: 3rem 1.5rem;
+    max-width: 500px;
+}
+.box>.card>h2{
+    color: #0099cc;
+    padding: 1rem;
+    font-family: boldfont;
+    border-bottom: 2px solid lightgrey;
+}
+.box>.card>.ques{
+  text-align: start;
+    padding: 0 1.5rem;
+}
+.box>.card>.ques>h3{
+    font-family: boldfont;
+}
+.box>.card>.ques>input{
+    padding: 1rem;
+    width: 100%;
+    margin: .3rem 0;
+    border: 2px solid grey;
+    font-family: boldfont;
+}
+.box>.card>.ques>.area{
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+.box>.card>.ques>.sub{
+  border: 1px solid black;
+  border-radius: 3px;
+  font-family: lightfont;
+  font-weight: bold;
+  padding: 2px 5px;
+  width: 85px;
+}
+.box>.card>.ques>p{
+  display: inline-block;
+  font-weight: bold;
+}
+.box>.card>.ques>button{
+  background-color: #081038;
+  color: #fff;
+  padding: .8rem 1.5rem;
+  border-style: none;
+  width: 100%;
+  margin: 1rem auto;
+}
+.box>.card>.ques>button:hover{
+  box-shadow: 0 0 .5rem #081038;
+}
+.box>.card>.ques>button>.fas{
+    float: right;
+}
+.box>.card>p{
+    font-size: small;
+    font-weight: bolder;
+}
+.box>.card>p>a{
+    color: #0099ff;
+    text-decoration: none;
+}
+footer{
+  margin-bottom: 1rem;
+  color: #081038;
+  font-size: small;
+  font-family: boldfont;
+}
+
+@media only screen and (min-width:750px){
+  .box>.card{
+      margin: 8rem 1.5rem;
+  }
+}
+@media only screen and (min-width:900px){
+  .box>.card{
+      margin: 5rem 1.5rem;
+  }
+}

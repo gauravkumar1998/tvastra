@@ -1,0 +1,270 @@
+html{
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: lightfont;
+    src: url(../Nexa-Light.otf);
+ }
+ @font-face {
+    font-family: boldfont;
+    src: url(../Nexa-Bold.otf);
+}
+ 
+ * {
+    font-family: lightfont;
+}
+ h1{
+     font-family: boldfont;
+}
+
+/* Image div */
+#image{
+    max-width: 450px;
+}
+#image>img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+/* end */
+
+.doctor{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+    margin: 0;
+}
+.top{
+    background-color: #96c6e7;
+    padding: 4rem 2rem;
+}
+.top>p{
+    font-size: larger;
+}
+.top>p>u{
+    font-family: boldfont;
+}
+
+#head{
+    font-size: large;
+    display: block;
+    position: relative;
+    padding: 1rem 2rem;
+}
+#head > p{
+    display: inline;
+}
+#head > button{
+    display: inline;
+    position: absolute;
+    right: 2rem;
+    padding: 0.5rem 1rem;
+    border-style: none;
+}
+.doctor>.menu1{
+    display: none;
+    flex: 20%;
+}
+.doctor>.menu1>.filter{
+    display: grid;
+    grid-template-columns: auto;
+}
+.doctor>.menu1>.filter>.title{
+    background-color: rgb(233, 230, 230);
+    padding-left: 1rem;
+}
+.doctor>.menu1>.filter>.title>p{
+    margin: .5rem auto;
+    font-family: boldfont;
+}
+.doctor>.menu1>.filter>.content{
+    margin: 0;
+    margin-top: .5rem;
+}
+.doctor>.menu1>.filter>.content>li{
+    list-style-type: none;
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    padding: 0 15px;
+    margin: 3px 0;
+    font-size: small;
+    font-weight: bold;
+}
+.doctor>.menu1>.filter>.content>li>.fas{
+    padding-left: 1rem;
+    color: #0099ff;
+}
+.doctor>.menu1>.menu{
+    display: grid;
+    grid-template-columns: 1rem auto 1rem;
+    border-bottom: 1px solid grey;
+}
+.doctor>.menu1>.menu>.heading{
+    grid-column: 1/3;
+    font-size: larger;
+    margin-left: 1rem;
+}
+.doctor>.menu1>.menu>.heading>p{
+    font-family: lightfont;
+    font-weight: bolder;
+}
+.doctor>.menu1>.menu>.search{
+    grid-column: 3/4;
+    margin: auto;
+    color: #0099ff;
+}
+.doctor>.menu1>.menu>.check{
+    grid-column: 1/2;
+    margin: auto 1rem;
+}
+.doctor>.menu1>.menu>.option{
+    grid-column: 2/4;
+    margin-left: 2rem;
+}
+.doctor>.menu1>.menu>.more{
+    grid-column: 1/3;
+    color: #0099ff;
+    margin: .5rem 1rem;
+}
+.doctor>.menu1>.menu>.more>h3{
+    font-size: 15px;
+}
+.doctor>.menu1>.menu>.option>p{
+    margin: 0rem;
+}
+.doctor>.cards{
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+}
+.doctor>.cards>.flex-container{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.doctor>.cards>.flex-container>.card{
+    display: grid;
+    background-color: white;
+    color: #081038;
+    margin-bottom: .5rem;
+    border: 1px solid grey;
+    text-align: left;
+    max-width: 350px;
+}
+.doctor>.cards>.flex-container>.card>.name{
+    font-family: boldfont;
+}
+.doctor>.cards>.flex-container>.card>.name>a{
+    text-decoration: none;
+    color: rgb(23, 172, 209);
+}
+.doctor>.cards>.flex-container>.card>.detail-grid>.detail{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+.doctor>.cards>.flex-container>.card>.detail-grid>.detail>.icon{
+    margin: auto;
+}
+.doctor>.cards>.flex-container>.card>.detail-grid>.detail>.icon>.fas{
+    color: #0099ff;
+    padding: 0 .6rem;
+}
+.doctor>.cards>.flex-container>.card>.detail-grid>.detail>.d{
+    margin: auto 0;
+}
+.doctor>.cards>.flex-container>.card>.image>img{
+    height: 450px;
+    width: 350px;
+    object-fit: cover;
+}
+.doctor>.cards>.flex-container>.card>.name{
+    color: rgb(23, 172, 209);
+    font-size: larger;
+    padding: 1rem 0;
+}
+#btn{
+    display: flex;
+    background-color: #081038;
+    border-style: none;
+    margin: 10px auto;
+    padding: .7rem 2rem;
+}
+#btn>a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (min-width: 750px){
+    .doctor>.cards{
+        flex: 80%;
+    }
+    .doctor>.menu1{
+        display: flex;
+        flex-direction: column;
+    }
+    .doctor>.cards>.flex-container>.card{
+        display: grid;
+        margin-bottom: 0rem;
+        margin-left: 1rem;
+        grid-template-columns: 70% 30%;
+        max-width: none;
+    }
+    .doctor>.cards>.flex-container>.card>.name{
+        grid-column: 1/2;
+        margin-top: .5rem;
+    }
+    .doctor>.cards>.flex-container>.card>.detail-grid{
+        display: grid;
+        grid-column: 1/2;
+        grid-template-columns: 40% 40%;
+        margin-left: 2rem;
+    }
+    .doctor>.cards>.flex-container>.card>.detail-grid>.detail{
+        grid-template-columns: 23% 77%;
+    }
+    #image{
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    #btn{
+        grid-column: 1/2;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    nav>a>img{
+        max-width: 200px;
+    }
+
+    #image>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width:900px){
+    nav>ul{
+        display: inline;
+    }
+    nav>a>img{
+        max-width: 200px;
+    }
+    nav>ul>li{
+        display: inline;
+    }
+    #btn1{
+        display: inline;
+    }
+    #btn2{
+        display: inline;
+    }
+    .doctor>.cards>.flex-container{
+        margin: auto 0;
+    }
+    .doctor>.menu1{
+        display: flex;
+        flex-direction: column;
+    }
+}
